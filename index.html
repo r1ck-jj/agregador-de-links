@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="light">
+  <head>
+    <!--Familia de Fontes-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+    </style>
+    <!--Essa configuração permite que usemos caracteres especiais na pagina-->
+    <meta charset="UTF-8" />
+    <!--Essa é para fazer uma compatibilidade com navegadores antigos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--Essa faz com que o projeto e adapte à difentes tamanhos de tela-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevLinks</title>
+    <!--EStou dizendo onde está o arquivo, o "./" indica que está na propria pasta-->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!--"id=" Identificador de elemento único-->
+    <div id="container">
+      <!--Para criar um "div id" automatico coloquei "#"-->
+      <div id="profile">
+        <img
+          src="assets/avatar.png"
+          alt="Foto de Paulo Ricardo sorrindo, usando óculos e camisa branca e fundo com paisagem montanhosa"
+        />
+        <p>@rick.jj</p>
+      </div>
+
+      <div id="switch" onclick="toggleMode ()" >
+        <button></button>
+        <span></span>
+      </div>
+
+      <!--ul. usamos pra criar listas não ordenadas, em tópicos-->
+      <ul>
+        <!--Item da lista-->
+        <li>
+          <!--Link que irei colocar-->
+          <a href="#" target="_blank">Quem sou eu?</a>
+        </li>
+
+        <!--Repetir pra cada botão-->
+        <li>
+          <a href="#" target="_blank">Veja meu portfólio</a>
+        </li>
+
+        <li>
+          <!--target=_blank. para que se abra uma nova guia ao clicar no link-->
+          <a href="#" target="_blank">Minhas recomendações</a>
+        </li>
+
+        <li>
+          <a href="#" target="_blank">Fale comigo por e-mail</a>
+        </li>
+      </ul>
+      <!--Icones das redes sociais-->
+      <div id="social-links">
+        <!--Para colocar icones usei o IonIcons-->
+        <a href="https://github.com/r1ck-jj" target="_blank"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+        <a href="https://https://www.instagram.com/r1ck.jj/" target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <a href="#" target="_blank"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+      </div>
+
+      <!--Rodapé-->
+      <footer>Feito por Ricardo de Jesus</footer>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

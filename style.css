@@ -1,0 +1,166 @@
+/*Não consegui usar o inspect no Figma*/
+
+/*Não entendi direito o que eu fiz aqui, mas basicamente zerei as configurações padrão do navegador*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Criei uma variavel que  vai definir em todo o conteudo*/
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg); /*background*/
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --hightlight-color: rgba(0, 0, 0, 0.2);
+  --switch-bg-url: url(./assets/moon-stars.svg);
+}
+
+/*Modo light*/
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --hightlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./assets/sun.svg);
+}
+
+/* Defini o fundo da página com uma imagem que se ajusta ao tamanho da tela */
+body {
+  background: var(--bg-url) no-repeat top center/cover;
+}
+
+/* Seletor universal aplicado a todos os elementos do body */
+/* Defini a fonte padrão e a cor do texto para branco */
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color); /*Coloquei a variavel que criei para mudar a cor*/
+}
+
+/* Container principal da página */
+#container {
+  width: 360px; /* Defini a largura do container */
+  margin: 56px auto 0px; /* Centralizei o container e adicionei espaçamento superior */
+  padding: 0px 24px; /* Espaçamento interno lateral */
+}
+
+/* Centralizei o conteúdo do perfil (imagem e texto) */
+#profile {
+  text-align: center;
+  padding: 24px; /* Adicionei espaçamento ao redor do bloco */
+}
+
+/* Defini o tamanho da imagem do perfil */
+#profile img {
+  width: 112px;
+}
+
+/* Ajustei o texto do nome de usuário */
+#profile p {
+  font-weight: 500; /* Deixei o texto mais encorpado */
+  line-height: 24px; /* Defini o espaçamento entre linhas */
+  margin-top: 8px; /* Afastei um pouco o texto da imagem */
+}
+
+/*Switch*/
+#switch {
+  position: relative;
+  width: 64px;
+
+  margin: 4px auto;
+}
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  /*Alinhamento de position absoluto*/
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  backdrop-filter: blur(4px);
+  border-radius: 9999px;
+}
+
+/* Estilização da lista de links */
+ul {
+  list-style: none; /* Removi os marcadores da lista */
+  display: flex; /* Usei flexbox para organizar os itens */
+  flex-direction: column; /* Organizei os itens em coluna */
+  gap: 16px; /* Criei um espaçamento entre os itens */
+  padding: 24px 0; /* Adicionei espaçamento superior e inferior */
+}
+
+/* Estilos dos botões de links */
+ul li a {
+  display: flex;
+  justify-content: center; /* Centralizei o texto dentro do botão */
+  padding: 16px 24px;
+  background: var(--surface-color); /* Fundo transparente */
+  border: 1px solid var(--stroke-color); /* Borda levemente visível */
+  border-radius: 8px; /* Arredondei os cantos */
+  backdrop-filter: blur(4px); /* Adicionei um efeito de desfoque */
+  -webkit-backdrop-filter: blur(4px); /* Compatibilidade com navegadores */
+  text-decoration: none; /* Removi o sublinhado do link */
+  font-weight: 500; /* Texto um pouco mais encorpado */
+  transition: background 0.2s; /* Adicionei uma transição suave ao hover */
+}
+
+/* Efeito quando o mouse passa por cima dos links */
+ul li a:hover {
+  background: var(--surface-color-hover); /* Mudança sutil na transparência */
+  border: 1.5px solid var(--text-color); /*novamente usei a variavel*/
+}
+
+/*Comecei a ficar cansado e parei de prestar atenção no que estava fazendo, não absorvi nada*/
+
+/* Container dos ícones das redes sociais */
+#social-links {
+  display: flex; /* Usei flexbox para organizar os ícones */
+  justify-content: center; /* Centralizei os ícones */
+  padding: 24px; /* Adicionei espaçamento */
+}
+
+/* Estilos para os ícones das redes sociais */
+#social-links a {
+  display: flex;
+  font-size: 24px; /* Aumentei o tamanho dos ícones */
+  align-items: center;
+  justify-content: center;
+  padding: 16px; /* Defini um tamanho confortável para os ícones */
+  border-radius: 50%; /* Arredondei o fundo dos ícones */
+  transition: background 0.2s; /* Efeito de transição ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse nos ícones */
+#social-links a:hover {
+  background: var(--hightlight-color); /* Fundo levemente mais visível */
+}
+
+/*Rodapé*/
+footer {
+  padding: 23px 0px;
+  text-align: center;
+  font-size: 14px;
+}
