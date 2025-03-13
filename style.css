@@ -32,6 +32,7 @@
 /* Defini o fundo da página com uma imagem que se ajusta ao tamanho da tela */
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 /* Seletor universal aplicado a todos os elementos do body */
@@ -164,4 +165,14 @@ footer {
   padding: 23px 0px;
   text-align: center;
   font-size: 14px;
+}
+
+/*Media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
