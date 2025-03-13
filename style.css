@@ -43,7 +43,8 @@ body * {
 
 /* Container principal da página */
 #container {
-  width: 360px; /* Defini a largura do container */
+  width: 100%x; /* Defini a largura do container para cobrir 100%  do espaço */
+  max-width: 588px; /*Defini a lagura máxima para 588PX*/
   margin: 56px auto 0px; /* Centralizei o container e adicionei espaçamento superior */
   padding: 0px 24px; /* Espaçamento interno lateral */
 }
