@@ -1,7 +1,8 @@
 <h1 align="center"> DevLinks </h1>
 
 <p align="center">
-Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
+Projeto desenvolvido por mim a partir do curso Discover da Rocketseat, focado no ensino de tecnologias WEB.
+</p>
 
 
 <p align="center">
@@ -34,11 +35,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O DevLinks é um agregador de links para usar como cartão de visitas online.
 
-- [Acesse o projeto finalizado, online](https://maykbrito.github.io/devlinks)
+- [Acesse o projeto finalizado, online](https://r1ck-jj.github.io/devlinks/)
 
-## Aprendizado
+## Aprendizados
 
-text
+Neste projeto, aprendi a estruturar páginas com HTML e CSS, explorei um pouco de JavaScript e usei o Figma para organizar o design. Além disso, pratiquei versionamento de código no GitHub.
 
 ## Layout
 
@@ -50,4 +51,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito por Ricardo de Jesus sob orietação da Rocketseat
+Feito por Ricardo de Jesus sob orientação da Rocketseat
